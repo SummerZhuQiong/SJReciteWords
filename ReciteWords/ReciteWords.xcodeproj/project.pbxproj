@@ -30,6 +30,8 @@
 		7781376E1F2F838900F3CAA8 /* SJAudioPlayerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781376D1F2F838900F3CAA8 /* SJAudioPlayerServer.m */; };
 		778137711F2F921B00F3CAA8 /* SJReciteWordsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 778137701F2F921B00F3CAA8 /* SJReciteWordsCollectionViewCell.m */; };
 		778137751F2F948C00F3CAA8 /* SJLocalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 778137741F2F948C00F3CAA8 /* SJLocalDataManager.m */; };
+		FA1297F41F401E9D00776F56 /* SJMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1297F31F401E9D00776F56 /* SJMineViewController.m */; };
+		FA1297F71F401EC200776F56 /* SJAllWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1297F61F401EC200776F56 /* SJAllWordViewController.m */; };
 		FCF1E8DF579BEC560FA480AB /* libPods-ReciteWords.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 703C99FE84BDA0DBF58CB7CB /* libPods-ReciteWords.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,10 @@
 		778137731F2F948C00F3CAA8 /* SJLocalDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLocalDataManager.h; sourceTree = "<group>"; };
 		778137741F2F948C00F3CAA8 /* SJLocalDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLocalDataManager.m; sourceTree = "<group>"; };
 		A8901B06E98165B83D4DF7C8 /* Pods-ReciteWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciteWords.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReciteWords/Pods-ReciteWords.release.xcconfig"; sourceTree = "<group>"; };
+		FA1297F21F401E9D00776F56 /* SJMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMineViewController.h; sourceTree = "<group>"; };
+		FA1297F31F401E9D00776F56 /* SJMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMineViewController.m; sourceTree = "<group>"; };
+		FA1297F51F401EC200776F56 /* SJAllWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJAllWordViewController.h; sourceTree = "<group>"; };
+		FA1297F61F401EC200776F56 /* SJAllWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJAllWordViewController.m; sourceTree = "<group>"; };
 		FA68CC42C134EA75944ACE4C /* Pods-ReciteWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciteWords.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReciteWords/Pods-ReciteWords.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +162,9 @@
 				778137391F2F598200F3CAA8 /* SmallView */,
 				778137351F2F581000F3CAA8 /* TabBarController */,
 				778137271F2F56C900F3CAA8 /* 背单词 */,
+				FA1297E91F401DAC00776F56 /* 全部 */,
 				7781373D1F2F5ABE00F3CAA8 /* 搜索单词 */,
+				FA1297EB1F401DFD00776F56 /* 我的单词 */,
 			);
 			path = ProjectFiles;
 			sourceTree = "<group>";
@@ -366,6 +374,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA1297E91F401DAC00776F56 /* 全部 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1297EC1F401E3700776F56 /* Controllers */,
+				FA1297ED1F401E3700776F56 /* Models */,
+				FA1297EE1F401E3700776F56 /* Views */,
+			);
+			name = "全部";
+			path = AllWords;
+			sourceTree = "<group>";
+		};
+		FA1297EB1F401DFD00776F56 /* 我的单词 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1297EF1F401E5300776F56 /* Controllers */,
+				FA1297F01F401E5300776F56 /* Models */,
+				FA1297F11F401E5300776F56 /* Views */,
+			);
+			name = "我的单词";
+			path = MineWords;
+			sourceTree = "<group>";
+		};
+		FA1297EC1F401E3700776F56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA1297F51F401EC200776F56 /* SJAllWordViewController.h */,
+				FA1297F61F401EC200776F56 /* SJAllWordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA1297ED1F401E3700776F56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA1297EE1F401E3700776F56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA1297EF1F401E5300776F56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA1297F21F401E9D00776F56 /* SJMineViewController.h */,
+				FA1297F31F401E9D00776F56 /* SJMineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA1297F01F401E5300776F56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA1297F11F401E5300776F56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -499,6 +575,7 @@
 				7781376B1F2F833D00F3CAA8 /* YYTimer.m in Sources */,
 				778137341F2F578700F3CAA8 /* SJReciteWordsViewController.m in Sources */,
 				778137581F2F676A00F3CAA8 /* NSObject+Extension.m in Sources */,
+				FA1297F71F401EC200776F56 /* SJAllWordViewController.m in Sources */,
 				778137681F2F831300F3CAA8 /* DBAudioPlayer.m in Sources */,
 				7781375B1F2F68FE00F3CAA8 /* SJDataServer.m in Sources */,
 				778137421F2F5ADA00F3CAA8 /* SJSearchWordsViewController.m in Sources */,
@@ -507,6 +584,7 @@
 				778137641F2F711A00F3CAA8 /* SJWordInfoView.m in Sources */,
 				7781374C1F2F5FBB00F3CAA8 /* DBNetworkingServer.m in Sources */,
 				7781376E1F2F838900F3CAA8 /* SJAudioPlayerServer.m in Sources */,
+				FA1297F41F401E9D00776F56 /* SJMineViewController.m in Sources */,
 				778137471F2F5EA600F3CAA8 /* SJWordInfo.m in Sources */,
 				778137311F2F571200F3CAA8 /* SJBaseNavigationController.m in Sources */,
 				778137511F2F631400F3CAA8 /* SJBorderlineView.m in Sources */,

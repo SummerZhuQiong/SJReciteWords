@@ -41,7 +41,7 @@
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
     // rigth nav btn item
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sj_search_search"] style:UIBarButtonItemStyleDone target:self action:@selector(clickedRightSearchItem:)];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sj_search_search"] style:UIBarButtonItemStyleDone target:self action:@selector(clickedRightSearchItem:)];
 }
 
 @end
