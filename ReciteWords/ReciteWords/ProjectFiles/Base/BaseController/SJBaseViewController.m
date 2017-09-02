@@ -20,12 +20,12 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    [self setupUI];
-    
+ 
+    [self _SJBaseViewControllerSetupUI];
 }
 
 - (void)dealloc {
-    [SVProgressHUD dismiss];
+    [SJPrompt dismiss];
 }
 
 // MARK: Actions
@@ -38,10 +38,14 @@
 
 // MARK: UI
 
-- (void)setupUI {
-    self.view.backgroundColor = [UIColor whiteColor];
+- (void)_SJBaseViewControllerSetupUI {
+    
+    self.view.backgroundColor = SJ_Theme_C;
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     // rigth nav btn item
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sj_search_search"] style:UIBarButtonItemStyleDone target:self action:@selector(clickedRightSearchItem:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sj_search"] style:UIBarButtonItemStyleDone target:self action:@selector(clickedRightSearchItem:)];
 }
 
 @end

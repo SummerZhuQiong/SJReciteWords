@@ -76,7 +76,7 @@
          *  设置返回数据类型为 json, 分别设置请求以及相应的序列化器
          */
         AFJSONResponseSerializer *_response = [AFJSONResponseSerializer serializer];
-        
+//        AFHTTPResponseSerializer *_response = [AFHTTPResponseSerializer serializer];
         /**
          *  Types
          *  设置响应数据的基本类型

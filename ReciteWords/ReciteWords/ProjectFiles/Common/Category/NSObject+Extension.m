@@ -208,6 +208,10 @@ extern UIImage  * Image(NSString *name) {
     return [UIImage imageNamed:name];
 }
 
+// MARK: - 字体
+extern CGFloat sjFontH(NSInteger size) {
+    return size * 1.193359;
+}
 
 extern __kindof UIView *nibView(NSString *nibName, id self) {
     return [[UINib nibWithNibName:nibName bundle:nil] instantiateWithOwner:self
@@ -301,6 +305,7 @@ extern double usedMemory() {
 
 
 BOOL sjSaveImage(UIImage *image, NSString *savePath) {
+    if ( !image ) return NO;
     // 缩放保存
     NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
     // 将图片写入文件
